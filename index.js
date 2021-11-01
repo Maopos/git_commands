@@ -6,7 +6,11 @@ app.use(express.static(__dirname + '/public'))
 const PORT = process.env.PORT || 4000;
 
 app.get("/boos", (req, res) => {
-  res.send("👷🏻‍♂️ Backend de BoosProject...");
+  res.send("👷🏻‍♂️ Backend...");
+});
+
+app.get("/project", (req, res) => {
+  res.send("👷🏻‍♂️ Otra ruta...");
 });
 
 app.listen(PORT, () => {
