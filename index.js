@@ -13,6 +13,10 @@ app.get("/project", (req, res) => {
   res.send("👷🏻‍♂️ Otra ruta...");
 });
 
+app.get("/master", (req, res) => {
+  res.send("👷🏻‍♂️ Ruta master...");
+});
+
 app.listen(PORT, () => {
   console.log("===========================================\n");
   console.log(`✅ Servidor funcionando en el puerto ${PORT}!!`);
